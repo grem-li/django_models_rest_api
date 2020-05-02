@@ -24,11 +24,10 @@
 ### SETUP
  - cp -r rest_api <projectpath>/
  - cd <projectpath>
- - #append "'rest_api'," in <project>/settings.py INSTALLED_APPS
- - #append "from rest_api import views"
-   #       "from django.urls import include"
-   #       "path('rest_api/', include('rest_api.urls')),"
-   #       in <project>/urls.py urlpatterns
+ - append "'rest_api'," in <project>/settings.py INSTALLED_APPS
+ - append "from rest_api import views" in <project>/urls.py
+ - append "from django.urls import include" in <project>/urls.py
+ - append "path('rest_api/', include('rest_api.urls'))," in <project>/urls.py urlpatterns
  - python3 manage.py migrate
 
 ### API URLS
